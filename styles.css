@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Thasadith:400,700');
 
-$light: #0fddff;
-$dark: #086f80; 
-$background: 'https://images.pexels.com/photos/1118448/pexels-photo-1118448.jpeg';
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,24 +8,23 @@ $background: 'https://images.pexels.com/photos/1118448/pexels-photo-1118448.jpeg
 body {
   font-family: 'Thasadith', sans-serif;
   text-align: center;
-  background-image: url($background);
+  background-image: url(https://images.pexels.com/photos/1118448/pexels-photo-1118448.jpeg);
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
 }
-header {
+header, main {
   width: 90%;
   max-width: 800px;
   margin: 20px auto;
   background-color: rgba(256, 256, 256, 0.5);
 }
-h1 {
-  color: $dark;
-}
 main {
-  @extend header;
   background-color: white;
   padding: 20px;
+}
+h1 {
+  color: #086f80;
 }
 #description {
   padding: 10px 0 20px 0;
@@ -70,7 +65,7 @@ input, select, textarea, #submit {
   width: 100%;
   padding: 5px;
   border-radius: 3px;
-  border: 1px solid $light;
+  border: 1px solid #0fddff;
   font-family: 'Thasadith', sans-serif;
   font-size: 0.9em;
 }
@@ -85,7 +80,7 @@ input[type="checkbox"], input[type="radio"] {
 #submit {
   width: 50%;
   margin: auto;
-  background-color: $dark;
+  background-color: #086f80;
   color: white;
   font-weight: bold;
   border: 0;
