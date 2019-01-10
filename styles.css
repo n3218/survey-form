@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Thasadith:400,700');
+
+$light: #0fddff;
+$dark: #086f80; 
+$background: 'https://images.pexels.com/photos/1118448/pexels-photo-1118448.jpeg';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Thasadith', sans-serif;
+  text-align: center;
+  background-image: url($background);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+header {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: rgba(256, 256, 256, 0.5);
+}
+h1 {
+  color: $dark;
+}
+main {
+  @extend header;
+  background-color: white;
+  padding: 20px;
+}
+#description {
+  padding: 10px 0 20px 0;
+}
+.col-right p {
+  display: flex;
+}
+div {
+  width: 50%;
+  padding: 0 10px 20px 0;
+  @media(max-width: 500px) {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 10px;
+  } 
+}
+.col-left {
+  @media(min-width: 500px) {
+    text-align: right;
+  }
+}
+.col-right {
+  text-align: left;
+}
+
+/* form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  
+}
+.col-left label {
+  display: block;
+  padding-top: 4px;
+}
+input, select, textarea, #submit {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid $light;
+  font-family: 'Thasadith', sans-serif;
+  font-size: 0.9em;
+}
+select {
+  height: 32px;
+  background-color: white;
+}
+input[type="checkbox"], input[type="radio"] {
+  margin: 6px 6px 0px -3px;
+  max-width: 20px;
+}
+#submit {
+  width: 50%;
+  margin: auto;
+  background-color: $dark;
+  color: white;
+  font-weight: bold;
+  border: 0;
+}
