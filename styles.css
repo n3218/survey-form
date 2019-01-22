@@ -61,6 +61,12 @@ form {
   display: block;
   padding-top: 4px;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
 input, select, textarea, #submit {
   width: 100%;
   padding: 5px;
