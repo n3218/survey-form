@@ -1,3 +1,3 @@
-# fcc-survey-form
+# survey-form
 
-<a href="https://natashport.github.io/fcc-survey-form/" target="_blank">DEMO</a>
+<a href="https://n3218.github.io/survey-form/" target="_blank">DEMO</a>
